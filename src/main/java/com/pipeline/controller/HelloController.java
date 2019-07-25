@@ -14,7 +14,7 @@ public class HelloController {
 
 	@RequestMapping(path = "/greeting", method = RequestMethod.GET)
 	public Greeting sayHello(@RequestParam String name) {
-		String message = "Welcome to Amazon " + name;
+		String message = "Welcome to new Amazon office " + name;
 		Greeting dto = new Greeting();
 		dto.setMessage(message);
 		return dto;
